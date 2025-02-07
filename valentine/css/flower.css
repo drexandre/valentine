@@ -1,0 +1,40 @@
+@keyframes growFlower {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.bouquet {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: growFlower 3s ease-in-out forwards;
+}
+
+.stem {
+    width: 10px;
+    height: 150px;
+    background: green;
+    position: relative;
+    animation: growStem 3s ease-in-out forwards;
+}
+
+@keyframes growStem {
+    0% {
+        height: 0px;
+        opacity: 0;
+    }
+    100% {
+        height: 150px;
+        opacity: 1;
+    }
+}

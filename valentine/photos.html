@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Memories</title>
+    <link rel="stylesheet" href="css/photos.css" />
+    <style>
+        body {
+          opacity: 0;
+          animation: fadeIn 1.5s forwards;
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+      </style>
+  </head>
+  <body>
+    <h1>When We First Met</h1>
+    <p> MEDAN</p>
+    <div class="photo-gallery">
+      <div class="photo-container">
+        <img src="images/photo1.jpg" alt="Memory 1" class="photo" />
+        <p class="photo-description">Budaya Date</p>
+      </div>
+      <div class="photo-container">
+        <img src="images/photo2.jpg" alt="Memory 2" class="photo" />
+        <p class="photo-description">Our First Photobooth</p>
+      </div>
+      <div class="photo-container">
+        <img src="images/photo3.jpg" alt="Memory 3" class="photo" />
+        <p class="photo-description">The Result</p>
+      </div>
+    </div>
+    <button class="button" onclick="location.href='memories2.html'">
+        Continue UWU
+      </button>
+  </body>
+</html>
